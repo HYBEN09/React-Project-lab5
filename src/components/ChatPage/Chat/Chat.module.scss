@@ -1,0 +1,42 @@
+.chat {
+  flex: 2;
+  padding: 1rem;
+
+  .chatInfo {
+    height: 60px;
+    border-bottom: 1px solid var(--gray-400);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--black);
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .chatProfile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    span {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .chatIcons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    img {
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+}
