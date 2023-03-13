@@ -1,6 +1,8 @@
-import classes from "./Chat.module.scss";
-import avatar from "../../../assets/chatAvatar.svg";
-import message from "../../../assets/chatMessage.svg";
+import classes from './Chat.module.scss';
+import avatar from '../../../assets/chatAvatar.svg';
+import message from '../../../assets/chatMessage.svg';
+import { Messages } from '../Messages/Messages';
+import { Input } from '@/components/ChatInput/ChatInput';
 export function Chat() {
   return (
     <div className={classes.chat}>
@@ -17,6 +19,8 @@ export function Chat() {
           <img src={message} alt="메세지 창으로 가기" />
         </div>
       </div>
+      <Messages />
+      <Input />
     </div>
   );
 }
